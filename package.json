@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maddstyle/Portfolio.git"
+  },
+  "author": "Michaela DeCamara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maddstyle/Portfolio/issues"
+  },
+  "homepage": "https://github.com/maddstyle/Portfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
