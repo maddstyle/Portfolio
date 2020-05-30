@@ -1,7 +1,7 @@
 $primary-color: silver;
 $secondary-color: #eece1a;
 $show-home-image: true;
-$home-image: url(../img/background.jpg);
+$home-image: url(../img/background.png);
 $background-opacity: 0.9;
 
 @mixin easeOut {
@@ -42,6 +42,23 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
+
+class Queue {
+  constructor() {
+    this.data = [];
+  }
+
+  add(record) {
+    this.data.unshift(record);
+  }
+
+  remove() {
+    return this.data.pop();
+  }
+}
+
+module.exports = Queue;
+
 
 //headings
 h1,
